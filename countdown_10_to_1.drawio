@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram name="countdown_10_to_1.drawio" id="0">
+        <mxGraphModel dx="576" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Set i = 10" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="290" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" style="endArrow=block;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="While i &gt;= 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" style="endArrow=block;html=1;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Display i" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="endArrow=block;html=1;" parent="1" source="4" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="i = i - 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" style="endArrow=block;html=1;" parent="1" source="5" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="End while" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="690" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" style="endArrow=block;html=1;" parent="1" source="6" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="End" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="790" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" style="endArrow=block;html=1;" parent="1" source="7" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

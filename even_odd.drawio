@@ -1,0 +1,56 @@
+
+<mxfile host="app.diagrams.net">
+<diagram name="even_odd.drawio">
+<mxGraphModel>
+<root>
+<mxCell id="0"/>
+<mxCell id="1" parent="0"/>
+
+        <mxCell id="2" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="80" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+        <mxCell id="3" value="Input number" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="180" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+            <mxCell id="103" style="endArrow=block;html=1;" edge="1" parent="1" source="2" target="3">
+            <mxGeometry relative="1" as="geometry"/>
+            </mxCell>
+            
+        <mxCell id="4" value="If number % 2 == 0 then number is Even" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="280" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+            <mxCell id="104" style="endArrow=block;html=1;" edge="1" parent="1" source="3" target="4">
+            <mxGeometry relative="1" as="geometry"/>
+            </mxCell>
+            
+        <mxCell id="5" value="Else number is Odd" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="380" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+            <mxCell id="105" style="endArrow=block;html=1;" edge="1" parent="1" source="4" target="5">
+            <mxGeometry relative="1" as="geometry"/>
+            </mxCell>
+            
+        <mxCell id="6" value="Display result" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="480" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+            <mxCell id="106" style="endArrow=block;html=1;" edge="1" parent="1" source="5" target="6">
+            <mxGeometry relative="1" as="geometry"/>
+            </mxCell>
+            
+        <mxCell id="7" value="End" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxGeometry x="240" y="580" width="120" height="60" as="geometry"/>
+        </mxCell>
+        
+            <mxCell id="107" style="endArrow=block;html=1;" edge="1" parent="1" source="6" target="7">
+            <mxGeometry relative="1" as="geometry"/>
+            </mxCell>
+            
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>
