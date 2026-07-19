@@ -1,0 +1,49 @@
+<mxfile host="65bd71144e">
+    <diagram id="jBbXYfEU4chslnBgoZHU" name="Page-1">
+        <mxGraphModel dx="446" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="600" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="START" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" parent="1" source="start" target="inABC" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="inABC" value="Input A, B, C" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="205" y="170" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" parent="1" source="inABC" target="calcD" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="calcD" value="D = B² − 4AC" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="205" y="260" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" parent="1" source="calcD" target="calcX1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="calcX1" value="X1 = (−B + √D) / (2A)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="350" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" parent="1" source="calcX1" target="calcX2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="calcX2" value="X2 = (−B − √D) / (2A)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="440" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" parent="1" source="calcX2" target="disp" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="disp" value="Display X1 and X2" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="535" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" parent="1" source="disp" target="end" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" value="END" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="635" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
