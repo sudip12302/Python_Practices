@@ -1,0 +1,122 @@
+<mxfile host="65bd71144e">
+    <diagram id="f2aMjBUyA0Iy0vhu7x-K" name="Page-1">
+        <mxGraphModel dx="816" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="750" pageHeight="1050" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="START" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="295" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" parent="1" source="start" target="inputABC" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="inputABC" value="Input A, B, C" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="275" y="170" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" parent="1" source="inputABC" target="dec1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec1" value="A ≥ B and&#xa;A ≥ C?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="265" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="largestA" value="Largest = A" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="370" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eA_yes" style="entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dec1" target="largestA" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="265" y="305"/>
+                            <mxPoint x="150" y="305"/>
+                        </Array>
+                        <mxPoint x="120" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lblA_yes" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="eA_yes" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dec2" value="B ≥ A and&#xa;B ≥ C?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="410" width="180" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="largestB" value="Largest = B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="265" y="550" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eB_yes" parent="1" source="dec2" target="largestB" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="200" y="440"/>
+                            <mxPoint x="200" y="570"/>
+                            <mxPoint x="230" y="570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lblB_yes" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="eB_yes" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="largestC" value="Largest = C" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="560" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eB_no" style="entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="dec2" target="largestC" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="445" y="430"/>
+                            <mxPoint x="560" y="430"/>
+                            <mxPoint x="560" y="545"/>
+                        </Array>
+                        <mxPoint x="560" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lblB_no" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="eB_no" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dispLargest" value="Display Largest" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="275" y="635" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eADisp" parent="1" source="largestA" target="dispLargest" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="150" y="660"/>
+                            <mxPoint x="275" y="660"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="eBDisp" parent="1" source="largestB" target="dispLargest" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eCDisp" parent="1" source="largestC" target="dispLargest" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="560" y="660"/>
+                            <mxPoint x="435" y="660"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="end" value="END" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="295" y="740" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eDispEnd" parent="1" source="dispLargest" target="end" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" style="entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="dec2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="355" y="380"/>
+                        </Array>
+                        <mxPoint x="355" y="340" as="sourcePoint"/>
+                        <mxPoint x="354.5" y="457.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="2" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

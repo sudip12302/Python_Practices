@@ -1,0 +1,85 @@
+<mxfile host="65bd71144e">
+    <diagram id="GKD6b47y1ytoGi21htTW" name="Page-1">
+        <mxGraphModel dx="686" dy="466" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="650" pageHeight="1050" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="START" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="245" y="80" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" parent="1" source="start" target="inputAB" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="inputAB" value="Input A and B" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="170" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" parent="1" source="inputAB" target="whileDec" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="whileDec" value="B !=0?" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="245" y="265" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="temp" value="Temp = B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="395" width="160" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="eWhileYes" parent="1" source="whileDec" target="temp" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="305" y="345"/>
+                            <mxPoint x="305" y="395"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lblWhileYes" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="eWhileYes" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="bMod" value="B = A % B" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="460" width="160" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" parent="1" source="temp" target="bMod" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="aTemp" value="A = Temp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="525" width="160" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" parent="1" source="bMod" target="aTemp" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="eLoopBack" parent="1" source="aTemp" target="whileDec" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="130" y="547"/>
+                            <mxPoint x="130" y="305"/>
+                            <mxPoint x="245" y="305"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="dispGCD" value="Display A as GCD" style="parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=20;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="225" y="640" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="eWhileNo" parent="1" source="whileDec" target="dispGCD" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="365" y="305"/>
+                            <mxPoint x="470" y="305"/>
+                            <mxPoint x="470" y="665"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lblWhileNo" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;fontSize=11;" parent="eWhileNo" vertex="1" connectable="0">
+                    <mxGeometry x="-0.7" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="end" value="END" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="245" y="745" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" parent="1" source="dispGCD" target="end" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
