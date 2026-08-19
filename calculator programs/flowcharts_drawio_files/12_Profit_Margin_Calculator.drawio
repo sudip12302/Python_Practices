@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram name="12_Profit_Margin_Calculator" id="0">
+        <mxGraphModel dx="576" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Start" style="shape=terminator;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="40" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Input cost &amp;amp; selling price of 3 products" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="130" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="endArrow=block;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="calculate individual profits" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="220" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="endArrow=block;html=1;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="total_cost = sum of costs" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="310" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="endArrow=block;html=1;" parent="1" source="5" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="total_selling = sum of selling" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="400" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="endArrow=block;html=1;" parent="1" source="7" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="total_profit = total_selling - total_cost" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="490" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="endArrow=block;html=1;" parent="1" source="9" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="profit_percentage = (total_profit/total_cost)*100" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="580" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="endArrow=block;html=1;" parent="1" source="11" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Print totals" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="670" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="endArrow=block;html=1;" parent="1" source="13" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Stop" style="shape=terminator;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="760" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="endArrow=block;html=1;" parent="1" source="15" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
