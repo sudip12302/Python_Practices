@@ -9,5 +9,8 @@ d = b*b - 4*a*c
 result1= (-b + math.sqrt(d)) / (2*a)
 result2 = (-b - math.sqrt(d)) / (2*a)
 
-print("First solution =", result1)
-print("Second solution =", result2)
+if d < 0:
+    print("No real solutions")
+else:
+    print("First solution =", result1)
+    print("Second solution =", result2)
