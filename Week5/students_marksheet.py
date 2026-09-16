@@ -7,8 +7,7 @@ students_marksheet = {}
 for i in range (n):
     name = input("Enter the name of student :")
     marks = int(input("Enter the marks obtained by {}: ".format(name)))
-    students_marksheet[name] = marks
-    
+    students_marksheet[name] = marks    
 
     
 for name, marks in students_marksheet.items():
