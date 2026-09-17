@@ -1,4 +1,4 @@
-# to find unique elements in a list adn sort by descending order
+# to find unique elements in a list and sort by descending order
 list1 = [1,1,2,3,3,4,4,5,6,5,6]
 unique_elements = []
 for element in list1:
