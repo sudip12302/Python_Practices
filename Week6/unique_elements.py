@@ -5,4 +5,4 @@ for element in list1:
     if element not in unique_elements:
         unique_elements.append(element)
         sorted_elements = sorted(unique_elements, reverse=True)
-print(sorted_elements)
+print(sorted_element)
