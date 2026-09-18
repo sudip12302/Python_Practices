@@ -2,7 +2,6 @@
 the sum of all elements above the diagonal and the sum of all elements below the diagonal,and ifnd min and max
 element in the matrix. the matrix is given below:[[1,2,3],[8,9,4],[7,6,5]]'''
 
-
 A = [[1,2,3],[8,9,4],[7,6,5]]
 sum_diagonal = 0
 # Calculate sum of diagonal elements (where i == j)
