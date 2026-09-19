@@ -13,7 +13,6 @@ class Students():
         """Returns the average marks of the student"""
         return (self.maths + self.science + self.english) / 3
 
-
 # Test the class
 S1 = Students("John Smith", 85, 90, 80)
 print(f"Student Name: {S1.name}")
