@@ -12,5 +12,4 @@ elif b > a and b > c:
     #if a and b are not the largest, then c must be the largest
 else:
     largest = c
-
 print("Largest number is:", largest)
