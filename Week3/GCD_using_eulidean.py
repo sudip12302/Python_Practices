@@ -9,5 +9,4 @@ while b != 0:
     temp = b #store the value of b in temp variable
     b = a % b #update the value of b to the remainder of a divided by b
     a = temp #update the value of a to the value of temp
-
 print("GCD is:", a)
