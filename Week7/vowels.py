@@ -15,4 +15,3 @@ word = input("Enter a word: ")
 vowels_count, const_count = count_vowels(word)
 print(f"Number of vowels: {vowels_count}")
 print(f"Number of constants: {const_count}")
-
